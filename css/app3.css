@@ -1,0 +1,49 @@
+/*  :first-child --
+elementin ilk çocuk nesnesi ise, seçim yapar.*/
+
+h1:first-child {
+    background-color: aqua;
+}
+
+
+
+
+/* :last-child    
+elementin son çocuk nesnesi ise seçim yapar. */
+
+h3:last-child {
+    background-color: blueviolet;
+}
+
+
+
+
+
+
+
+p:first-of-type {
+    background-color: blueviolet;
+}
+
+p:last-of-type {
+    background-color: antiquewhite;
+}
+
+
+/* css'de birden başlıyor. */
+p:nth-child(6){
+    background-color: blue;
+}
+
+
+p::first-letter {
+    background: burlywood;
+    color:blue;
+}
+p:nth-of-type(odd){
+    background-color: yellowgreen;
+}
+
+
+/* odd: tek  / even : çift */
+

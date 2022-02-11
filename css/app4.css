@@ -1,0 +1,48 @@
+ * {
+     margin:0;
+     padding:0;
+     box-sizing: 0;
+ }
+
+ ul,
+ li,
+ ol {
+     list-style-type: none;
+ }
+
+ a{
+     text-decoration: none;
+ }
+
+ body {
+     height: 100vh;
+     display: flex;
+     align-items:center;
+     justify-content:center;
+ }
+
+ a {
+     display:block;
+     width:100px;
+     height:50px;
+     background-color: crimson;
+     color:#fff;
+     text-align:center;
+     line-height: 50px;
+     border-radius: 3px;
+     position:relative;
+ }
+
+ a::before {
+     content : "\271A";
+     position: absolute;
+     top:0;
+     left:-20px;
+     width:30px;
+     height:50px;
+     background-color: darkgoldenrod;
+ }
+
+ a::after {
+     content : "\271A"; /*aski kodu*/
+ }
