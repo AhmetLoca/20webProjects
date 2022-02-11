@@ -1,36 +1,21 @@
-/* link, ziyaretçi tarafından henüz açılmamış 
-elementin default degeridir.
- */
-
-a:link{
-    color:#000;
-    text-decoration: none;
+p::selection {
+    background-color: blue;
 }
 
-/*
-visited, ziyaret edildikten sonraki linkin görünüşü 
-hakkında bilgi veriyor.
-
-active, active class'i mouse ile tıklandığı an daki olaydır.
-focus ile aynıdır.
-
-hover class'ı en fazla kullanacağımız pseudo özelliği olacak.
-Bir linkin üzerine geldiğin zaman ki fare olayını tetikler.
-*/
-
-a:hover{
-    color:blue;
-
+p:first-child{
+    background-color:burlywood;
 }
 
-a:active{
-    color:red;
+p:empty {
+    background: palegreen;
+    height: 20px;
 }
 
-a:focus{
-    color:burlywood;
+p:not(:first-child){
+    margin-bottom: 100px;
 }
 
-a:visited{
-    color:chartreuse;
+input:checked + span{
+    background-color:crimson;
+    color:#fff;
 }
