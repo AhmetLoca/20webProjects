@@ -1,6 +1,6 @@
 /* link, ziyaretçi tarafından henüz açılmamış 
 elementin default degeridir.
- */
+*/
 
 a:link{
     color:#000;
@@ -20,7 +20,6 @@ Bir linkin üzerine geldiğin zaman ki fare olayını tetikler.
 
 a:hover{
     color:blue;
-
 }
 
 a:active{

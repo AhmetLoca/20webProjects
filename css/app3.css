@@ -6,18 +6,12 @@ h1:first-child {
 }
 
 
-
-
 /* :last-child    
 elementin son çocuk nesnesi ise seçim yapar. */
 
 h3:last-child {
     background-color: blueviolet;
 }
-
-
-
-
 
 
 
@@ -44,6 +38,4 @@ p:nth-of-type(odd){
     background-color: yellowgreen;
 }
 
-
 /* odd: tek  / even : çift */
-

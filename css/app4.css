@@ -8,18 +8,18 @@
  li,
  ol {
      list-style-type: none;
- }
+}
 
  a{
      text-decoration: none;
- }
+}
 
  body {
      height: 100vh;
      display: flex;
      align-items:center;
      justify-content:center;
- }
+}
 
  a {
      display:block;
@@ -41,8 +41,9 @@
      width:30px;
      height:50px;
      background-color: darkgoldenrod;
- }
+}
 
  a::after {
      content : "\271A"; /*aski kodu*/
- }
+}
+

@@ -1,0 +1,17 @@
+.box {
+    width : 200px;
+    height : 200px;
+    background-color : tomato;
+    text-align : center;
+    line-height: 200px;
+    color:#fff;
+    /* float:left;    kutuları sola kaydırır. */
+}
+
+.box:nth-child(2) {
+    float: right;
+}
+
+.clear {
+    clear:both;
+}
