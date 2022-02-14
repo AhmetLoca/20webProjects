@@ -1,0 +1,42 @@
+.box {
+
+    background-color: tomato;
+    width: 300px;
+    height: 300px;
+    font-size: 30px;
+    color:#fff;
+    position: static; 
+    /*static, default pozisyonudur.
+      Element nereye konumlandırılmışsa
+      orada durmasını sağlayan 
+      pozisyon hareketidir.  */
+
+
+      /* position: fixed;
+    -> Siz sayfayı scroll etseniz dahi
+    bulunduğu alandan ayrılmayacaktır.
+      */
+
+      /* position: absolute;    
+->Bir elementi static durumdan dinamik duruma
+yani askıda, yüzdürme özelliğine sahip
+olmasını sağlayan bir özelliktir.
+      */
+
+
+      /* position : relative;   
+->Belli bir alanda göreceli davranır.
+      */
+
+      /*
+        Z-index
+->Z-index özelliğini sadece absolute ve fixed
+özellikleriyle kullanılır. Diğer özelliklerde yani
+position:relative ve position:static'te 
+z-index değeri kullanılmaz.
+      */
+     
+
+
+
+}

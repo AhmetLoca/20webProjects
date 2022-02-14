@@ -1,0 +1,9 @@
+p {
+    width : 500px;
+    height: 100px;
+    background-color: brown;
+    /* overflow: visible; taşan yazıyı göster. */
+    /* overflow:hidden; taşanları gizle. */
+    overflow:auto; /*scroll özelliğini ekleyecek.*/
+    /* overflow:scrol; scroll özelliğini ekleyecek. */
+}
