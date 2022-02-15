@@ -1,0 +1,26 @@
+.box {
+    width:0;
+    height:0;
+    background-color:hotpink;
+    border-color:bisque transparent transparent transparent;
+    border-width:50px;
+    border-style: solid;
+}
+
+.box2 {
+    width:0;
+    height:0;
+    background-color: red;
+    border:20px solid #000;
+    border-color:red green blue black;
+    margin: 100px;
+}
+
+.box3 {
+
+    width:200px;
+    height:200px;
+    background-color:red;
+    border-radius:100px 100px 50px 50px;
+
+}
