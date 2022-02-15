@@ -5,7 +5,6 @@ h1:first-child {
     background-color: aqua;
 }
 
-
 /* :last-child    
 elementin son çocuk nesnesi ise seçim yapar. */
 
@@ -33,6 +32,7 @@ p::first-letter {
     background: burlywood;
     color:blue;
 }
+
 p:nth-of-type(odd){
     background-color: yellowgreen;
 }
