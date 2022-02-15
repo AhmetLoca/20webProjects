@@ -1,0 +1,15 @@
+
+:root {
+    --renk: red;
+    --white-color:#fff;
+}
+
+
+p {
+    background-color: var(--renk);
+    color:var(--white-color);
+}
+
+h3 {
+    background-color: var(--renk);
+}
