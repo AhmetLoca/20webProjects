@@ -1,0 +1,32 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.header {
+    background-color: aqua;
+    padding: 30px;
+}
+
+.sidebar {
+    background-color: darkblue;
+    padding: 30px;
+    flex-basis: 20%;
+}
+
+.main {
+    background-color: darkcyan;
+    padding: 30px;
+    flex:1;
+}
+
+.footer {
+    background-color:firebrick;
+    padding: 30px;
+}
+
+.content {
+    display: flex;
+    flex:1;
+}

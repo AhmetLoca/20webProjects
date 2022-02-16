@@ -1,0 +1,20 @@
+button {
+
+    padding:30px;
+    background-color: blueviolet;
+    border-radius: 4px;
+    color:#fff;
+    text-transform: uppercase;
+    font-size: 18px;
+    cursor:pointer;
+    transition-property:all;
+    transition-duration:500ms;
+
+}
+
+
+button:hover {
+
+    background-color:crimson;
+
+}

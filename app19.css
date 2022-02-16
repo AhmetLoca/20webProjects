@@ -1,0 +1,22 @@
+nav ul {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap : wrap;
+    border: 5px solid #ddd;
+}
+
+
+nav ul li {
+
+    width:200px;
+    height:200px;
+    background-color: blueviolet;
+    color:#fff;
+    text-align: center;
+    line-height: 200px;
+    margin:15px;
+}
+
+nav ul li:nth-child(odd) {
+    background-color: indianred;
+}

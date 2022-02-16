@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="app19.css">
+<!-- 
+
+    Flex, elementleri tarayıcı içerisinde esnek bir yapıda
+    kolayca yönetmenin adıdır.
+
+    Float ve positiondan farkı, daha esnek daha güçlü
+    ve daha temiz kodlama diyebiliriz.
+
+    display : flex
+
+    display : inline-flex
+
+    Elementleri satır düzeyinde hizalar. CSS 'te kullanılan
+    block ve inline degerleri ile aynıdır.
+ 
+--------------------------------------------------------
+
+flex-direction : row            -> yatay hızalama
+flex-direction : column         -> dikey hızalama
+flex-direction : row-reverse    -> yatay ters hızalama
+flex-direction : column-reverse -> dikey ters hızalama
+--------------------------------------------------------
+
+flex-wrap : Elementleri tek bir satıra sığdırır.
+Gerektiğinde elementleri birden fazla satıra yaymak
+için bu özelliği kullanabilirsiniz.
+
+flex-wrap : nowrap     -> Tüm elementleri tek satırda
+                        yan yana sıralar.
+
+
+flex-wrap : wrap       -> Gerektiğinde elementleri
+                       birden fazla satıra yayar.
+
+
+flex-wrap : wrap-reverse -> Gerektiğinde elementleri
+                            birden fazla satırda 
+                            aşağıdan yukarı doğru sıralar.
+
+
+------------------------------------------------------
+
+align-items, elementleri dikey eksende hızalamak
+için kullanılır.
+
+flex-start      -> Elementleri yukarıya doğru hızalar.
+flex-end        -> Elementleri aşağıya doğru hızalar.
+center          -> Elementleri ortalar.
+baseline        -> Element içindeki ilk satırı
+              baz alarak ortalama yapar.
+
+stretch(default) -> Elementleri germek amacıyla
+                       kullanılır.
+
+------------------------------------------------------
+
+justify-content, Elementleri yatay eksende hızalamak
+                 için kullanılır.
+
+
+flex-start    -> Elementleri sola doğru hızalar.
+flex-end      -> Elementleri sağa doğru hızalar.
+center        -> Elementleri ortalar.
+space-between -> İlk öge sola dayalı, son öge sağa dayalı ve diğer
+                elementleri ortalı olacak şekilde hızalar.
+
+space-around  -> İlk ve son ögede ortadaki elementlerin boşluklarının
+yarısı kadar boşluk bırakır ve diğerlerini arası eşit olacak şekilde hızalar.
+
+space-evenly  -> Tüm ögelerin arası aynı eşitlikte olacak şekilde hızalar.
+---------------------------------------------------------
+
+align-content,
+
+çok satırlı yapılarda elementleri dikey eksende hızalamak amacıyla kullanılır.
+
+flex-start    -> Elementleri sola doğru hızalar.
+flex-end      -> Elementleri sağa doğru hızalar.
+center        -> Elementleri ortalar.
+space-between -> İlk öge sola dayalı, son öge sağa dayalı ve diğer
+                elementleri ortalı olacak şekilde hızalar.
+
+space-around  -> İlk ve son ögede ortadaki elementlerin boşluklarının
+yarısı kadar boşluk bırakır ve diğerlerini arası eşit olacak şekilde hızalar.
+
+space-evenly  -> Tüm ögelerin arası aynı eşitlikte olacak şekilde hızalar.
+------------------------------------------------------------------
+
+-order- feature
+
+Elementlerin sırasını değiştirmek için kullanılır. VErilen değer 0 dan küçükse 
+element ilk sıraya gelir, 0 dan büyükse son sıraya gelir.
+(default degeri "0" dır.)
+
+------------------------------------------------------------------
+
+flew-grow : Bir elementi diğer elementlere göre büyük göstermek için kullanılır.
+
+flex-shrink : Elementleri küçültmek için kullanılır.Default değeri 1'dir.
+
+flex-basis : Elementlerin bulunduğu kapsayıcı alanda boş kalan alanları doldurmak
+amacayıla kullanılır.
+
+flex : grow,shrink ve basis özelliklerinin tek bir özellikte toplanmasıdır.
+
+
+-->
+
+
+</head>
+
+<body>
+
+
+
+ <nav>
+    <ul>
+        <li>01</li>
+        <li>02</li>
+        <li>03</li>
+        <li>04</li>
+        <li>05</li>
+        <li>06</li>
+    </ul>
+</nav>
+
+    
+</body>
+</html>
