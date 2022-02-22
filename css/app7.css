@@ -8,13 +8,11 @@
     position: static; 
     /*static, default pozisyonudur.
       Element nereye konumlandırılmışsa
-      orada durmasını sağlayan 
-      pozisyon hareketidir.  */
+      orada durmasını sağlayan pozisyon hareketidir.  */
 
 
       /* position: fixed;
-    -> Siz sayfayı scroll etseniz dahi
-    bulunduğu alandan ayrılmayacaktır.
+    -> Siz sayfayı scroll etseniz dahi bulunduğu alandan ayrılmayacaktır.
       */
 
 

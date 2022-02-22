@@ -1,5 +1,5 @@
-/* link, ziyaretçi tarafından henüz açılmamış 
-elementin default değeridir.
+/* link, ziyaretçi tarafından
+henüz açılmamış elementin default değeridir.
 */
 
 a:link{
@@ -8,9 +8,11 @@ a:link{
 }
 
 /*
-visited, ziyaret edildikten sonraki linkin görünüşü hakkında bilgi veriyor.
+visited, ziyaret edildikten sonraki linkin görünüşü 
+hakkında bilgi veriyor.
 
-active, active class'i mouse ile tıklandığı an daki olaydır. Focus ile aynıdır.
+active, active class'i mouse ile tıklandığı an daki olaydır. 
+Focus ile aynıdır.
 
 hover class'ı en fazla kullanacağımız pseudo özelliği olacak.
 Bir linkin üzerine geldiğin zamanki fare olayını tetikler.
