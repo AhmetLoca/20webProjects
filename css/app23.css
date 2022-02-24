@@ -23,6 +23,26 @@ p > em {
   /*h3'ten hemen sonra gelen paragrafı seç.*/
 
 
+
   div + p span {
       color:green;
-  }
+  
+ }
+
+ /*
+ div'den sonra gelen p etiketi içerisindeki span'ı seç.
+(BİTİŞİK KARDEŞ (A + B))
+ */
+
+
+ 
+h4 ~ p {
+    color:blue;
+}
+
+
+/*
+
+~(tilda),h4'ten sonra gelen tüm p etiketlerini seçer.
+(GENEL KARDEŞ SEÇİCİ (A ~ B))
+*/
