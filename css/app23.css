@@ -1,0 +1,28 @@
+p > b {
+    color:blue;
+}
+
+p > em {
+    color:red;
+}
+
+/*
+    1.Ebeveyn seçicim p'dir. 
+    Çocuk seçicim ise 'b'dir.
+    b etiketimin bir üst sekmesi paragraf etiketi.
+    Fakat 2. bölümde 'em'nin bir üst sekmesi 'span'etiketi.
+    
+  */
+
+  /*--------------------------------------------------------*/
+
+  h3 + p {
+    color:blue;
+  }
+
+  /*h3'ten hemen sonra gelen paragrafı seç.*/
+
+
+  div + p span {
+      color:green;
+  }
