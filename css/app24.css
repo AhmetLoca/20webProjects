@@ -1,0 +1,79 @@
+abbr[title] {
+    color:green;
+}
+
+/*
+
+[], nitelik.
+
+[title] niteliği title olanları seçecek. 
+
+*/
+
+
+/*--------------------------------------------------------*/
+
+a[target="_blank"] {
+    color:green;
+}
+
+/*
+    target değeri blank olanları seç.
+*/
+
+img[alt=""] {
+    background: blue;
+}
+
+/*
+  alt niteliği boş olanlar.
+*/
+
+/*-------------------------------------------------------*/
+
+
+div[class|="box"] {
+    background: yellow;
+}
+
+
+/*
+    Ya kelimenin tamamı eşlenecek ya da tire(-) ile 
+    ayrılmış bir kelimesi eşlenecek.
+*/
+
+
+/*------------------------------------------------------------*/
+
+div[class^="kutu"] {
+    background: yellow;
+}
+
+/*
+kutu ile başlayanları seç.
+*/
+
+/*-----------------------------------------------------------*/
+
+
+
+div[class$="box"] {
+    background: green;;
+}
+
+
+
+/*class niteliği box ile bitenleri seçer.*/
+
+/*-----------------------------------------------------------*/
+
+div[class*="tiTle" i] {
+    background: yellow;
+}
+
+/*
+içerisinde title olan tüm etiketleri seç.
+
+i harfi ile insensetible(duyarsız) oluyor. Büyük küçük harf
+duyarlılığını kaldırmış olduk.
+*/
