@@ -15,7 +15,11 @@
     :first-of-type --kardeş elementin ilkini seçer.
     :last-of-type  --kardeş elementin sondakini seçer.
 
-    :nth-child(n)        --n.nesneyi seçer.
+    //işimize çok yarıyor. 
+    :nth-child(n)        --n.nesneyi seçer.(birden başlıyor)
+    nth-child(3n+2) ->    2.elemandan başla. 3er 3er git.
+    nth-child(-n+8) ->    8 ve öncesini seçer.
+
     :nth-last-child(n)   --sondan n.nesneyi seçer.
     :nth-of-type(n)      --baştan n.nesneyi seçer.
     :nth-last-of-type(n) --sondan n.nesneye kadar seçer.
@@ -23,7 +27,13 @@
     ::first-line         --ilk satırı seçer.
     ::first-letter       --ilk karakteri seçer.
 
-    Parametreler ( odd(çift) / even(tek) )
+    Parametreler ( odd(tek)
+                   even(çift))
+    
+    
+
+    
+    
     -->
 
     <div>
