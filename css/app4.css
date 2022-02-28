@@ -1,48 +1,43 @@
- * {
-     margin:0;
-     padding:0;
-     box-sizing: 0;
- }
-
- ul,
- li,
- ol {
-     list-style-type: none;
+div {
+    background-color: greenyellow;
 }
 
- a{
-     text-decoration: none;
+
+/*seçilen div'in sonrasına bir şey ekleyeceğim.*/
+div::after {
+    content : " After write";
+    color : red;
 }
 
- body {
-     height: 100vh;
-     display: flex;
-     align-items:center;
-     justify-content:center;
+
+/*boş bile olsa bir content BELİRTMEMİZ GEREKİYOR.*/
+
+/*attr() = attribute(nitelik)*/
+div::before {
+    content : attr(data-name);
+    color : palevioletred;
 }
 
- a {
-     display:block;
-     width:100px;
-     height:50px;
-     background-color: crimson;
-     color:#fff;
-     text-align:center;
-     line-height: 50px;
-     border-radius: 3px;
-     position:relative;
- }
-
- a::before {
-     content : "\271A";
-     position: absolute;
-     top:0;
-     left:-20px;
-     width:30px;
-     height:50px;
-     background-color: darkgoldenrod;
+a[target="_blank"]::after {
+    content: '(' attr(href) ')';
 }
 
- a::after {
-     content : "\271A"; /*aski kodu*/
+p::first-letter {
+    color: red;
+    font-size: 30px;
+}
+
+p::first-line {
+    background: yellowgreen;
+    font-size:40px;
+}
+
+
+/*tamamına etki edecektir.*/
+::selection {
+    background: plum;
+}
+
+input::placeholder {
+    color:plum;
 }
