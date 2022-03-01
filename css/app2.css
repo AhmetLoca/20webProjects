@@ -15,7 +15,10 @@ p:not(:first-child){
     margin-bottom: 100px;
 }
 
-input:checked + span{
-    background-color:crimson;
-    color:#fff;
+input:invalid {
+    border-color:tomato;
+}
+
+input:valid {
+    border-color: green;
 }

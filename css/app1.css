@@ -33,3 +33,39 @@ a:focus{
 a:visited{
     color:chartreuse;
 }
+
+
+button:hover + ul {
+    display:none;
+}
+
+li:hover {
+    color:blanchedalmond;
+}
+
+p::selection {
+    color:blueviolet;
+}
+
+input[type="radio"]:checked + span {
+    color:red;
+}
+
+
+.button::before {
+    content: attr(data-hide);
+}
+
+.checkbox:checked + .button::before {
+    content: attr(data-show);
+}
+
+.checkbox:checked + .button + .box {
+    display: none;
+}
+
+li:empty {
+    display: none;
+}
+
+
