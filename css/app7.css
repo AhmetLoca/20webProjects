@@ -1,11 +1,13 @@
 .box {
 
     background-color: tomato;
-    width: 300px;
+    width: min-content;
     height: 300px;
     font-size: 30px;
     color:#fff;
     position: static; 
+
+
     /*static, default pozisyonudur.
       Element nereye konumlandırılmışsa
       orada durmasını sağlayan pozisyon hareketidir.  */

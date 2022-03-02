@@ -1,0 +1,11 @@
+div {
+    background-color: limegreen;
+    width: 500px;
+    height:500px;
+    padding:50px; /*yukarıya,sağa,aşağıya,sola 4 tarafada padding(iç boşluk) veriyor.*/
+    /* padding-top: 50px;
+    padding-left:300px;
+    padding-bottom:50px;
+*/
+
+} 
