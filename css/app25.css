@@ -1,0 +1,20 @@
+div {
+    background-color: limegreen;
+    margin:50px;
+    /* margin-top:50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px; */
+/*
+padding -> etiketin içindeki boşluk.
+margin  -> etiketin dışındaki boşluk.
+
+margin: 50px 100px;  -> yukarıdan ve aşağıdan 50px
+                        soldan ve sağdan 100px'lik 
+                        dış boşluk verir.
+ 
+margin-left: -50px    -> içeri doğru çeker.
+
+*/
+
+}
