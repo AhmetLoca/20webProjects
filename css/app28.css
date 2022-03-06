@@ -1,0 +1,8 @@
+h3 {
+    font-family : 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size : 70px;
+    font-weight : 900;
+    text-align : center;
+    /* text-shadow : yatay dikey bulanıklık renk ;*/
+    text-shadow : 5px 5px 0 limegreen ;
+}
