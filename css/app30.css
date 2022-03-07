@@ -1,0 +1,13 @@
+.box {
+    width : 200px;
+    height :200px;
+    background : linear-gradient(to right, orange, red);
+}
+
+
+.box1 {
+    width : 300px;
+    height : 200px;
+    background-image: linear-gradient(to right, #002395 33%, #fff 33% 66%, #ED2939 66%);
+
+}
