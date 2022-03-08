@@ -18,3 +18,15 @@ button:hover {
     background-color:crimson;
 
 }
+
+
+.avatar {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    background: #ddd;
+    transition: 1s border-radius;
+  }
+  .avatar:hover {
+    border-radius: 50%;
+  }
