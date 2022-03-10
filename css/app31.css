@@ -1,0 +1,15 @@
+select {
+    appearance: none;
+    border-color: red;
+    height: 35px;
+    padding: 0 10px;
+}
+
+input[type="file"]::file-selector-button {
+    appearance:none;
+    background-color:limegreen;
+    height: 35px;
+    padding: 0 20px;
+    cursor:pointer;
+
+}
