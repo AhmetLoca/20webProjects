@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/27f60bcc11.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <style>
+        
+        /*
+        TELEGRAM CHAT'İ YAPIYORUZ
+
+        Öncelikle, sitemizi parçalar halinde düşünmeliyiz.
+        Sitemiz bir slidebar(sol tarafta) bir de content( sağ tarafta ) bölümünden oluşuyor.
+        Bunların hepsini kapsayan bir div'im olduğunu düşünüyorum.
+        
+        Ana yapıyı parçaladık. Şimdi sidebar kısmını parçalayalım.
+
+        *Sidebar kısmımızda 2 tane yapımız var. Biri arama kutusu diğeri de
+        kişi listesinin listelendiği bölüm. 
+        O yüzden, sidebar içerisinde de benim iki tane div'im olacak.
+        Bir tanesi search diğeri de contacts yani kişi listem.
+    
+
+        *Sağ tarafta 3 tane yapım var. 
+        Üst kısım bir div olacak.
+        Mesajları veren kısım bir tane div'im olacak.
+        Sonuncu olarakta mesajları göndermek içinde bir tane div'im olacak.
+        
+        */
+
+    </style>
+
+
+    <div class="chat">
+            <div class="sidebar">
+                <div class="search">
+                    <input type="text" placeholder="Ara..">
+                    <i class="fa fa-search"></i>
+                </div>
+
+                <div class="contacts">
+                    <ul>
+                        <li>
+                          <a href="#">
+                            <img src="tayfunErbilen.jpg">
+                            <div class="contact">
+                                <div class="name">Ahmet Loca</div>
+                                <div class="message">Merhaba, bu bir test mesajıdır..</div>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="active">
+                            <a href="#">
+                              <img src="ahmetLoca.jpg">
+                              <div class="contact">
+                                  <div class="name">Ahmet Loca</div>
+                                  <div class="message">Merhaba, bu bir test mesajıdır..</div>
+                              </div>
+                              <div class="notification">3</div>
+                            </a>
+                          </li> 
+                           <li>
+                            <a href="#">
+                              <img src="ahmetLoca.jpg">
+                              <div class="contact">
+                                  <div class="name">Ahmet Loca</div>
+                                  <div class="message">Merhaba, bu bir test mesajıdır..</div>
+                              </div>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <img src="ahmetLoca.jpg">
+                              <div class="contact">
+                                  <div class="name">Ahmet Loca</div>
+                                  <div class="message">Merhaba, bu bir test mesajıdır..</div>
+                              </div>
+                            </a>
+                          </li> 
+                          <li>
+                            <a href="#">
+                              <img src="ahmetLoca.jpg">
+                              <div class="contact">
+                                  <div class="name">Ahmet Loca</div>
+                                  <div class="message">Merhaba, bu bir test mesajıdır..</div>
+                              </div>
+                            </a>
+                          </li> 
+                          <li>
+                            <a href="#">
+                              <img src="ahmetLoca.jpg">
+                              <div class="contact">
+                                  <div class="name">Ahmet Loca</div>
+                                  <div class="message">Merhaba, bu bir test mesajıdır..</div>
+                              </div>
+                            </a>
+                          </li> 
+                          <li>
+                            <a href="#">
+                              <img src="ahmetLoca.jpg">
+                              <div class="contact">
+                                  <div class="name">Ahmet Loca</div>
+                                  <div class="message">Merhaba, bu bir test mesajıdır..</div>
+                              </div>
+                            </a>
+                          </li> 
+                          <li>
+                            <a href="#">
+                              <img src="ahmetLoca.jpg">
+                              <div class="contact">
+                                  <div class="name">Ahmet Loca</div>
+                                  <div class="message">Merhaba, bu bir test mesajıdır..</div>
+                              </div>
+                            </a>
+                          </li> 
+                          <li>
+                            <a href="#">
+                              <img src="ahmetLoca.jpg">
+                              <div class="contact">
+                                  <div class="name">Ahmet Loca</div>
+                                  <div class="message">Merhaba, bu bir test mesajıdır..</div>
+                              </div>
+                            </a>
+                          </li> 
+                          <li>
+                            <a href="#">
+                              <img src="ahmetLoca.jpg">
+                              <div class="contact">
+                                  <div class="name">Ahmet Loca</div>
+                                  <div class="message">Merhaba, bu bir test mesajıdır..</div>
+                              </div>
+                            </a>
+                          </li> 
+                          <li>
+                            <a href="#">
+                              <img src="ahmetLoca.jpg">
+                              <div class="contact">
+                                  <div class="name">Ahmet Loca</div>
+                                  <div class="message">Merhaba, bu bir test mesajıdır..</div>
+                              </div>
+                            </a>
+                          </li> 
+
+                    </ul>
+                </div>
+            </div>
+
+
+
+
+
+            <div class="content">
+                <div class="message-header">
+
+                    <div class="user-info">
+                        <img src="ahmetLoca.jpg">
+                    </div>
+                    <div class="user">Ahmet Loca</div>
+                    <div class="time">5 dk önce</div>
+               
+                    <div class="actions">
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <i class="fa fa-info-circle"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="fa fa-ellipsis-v"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                
+                </div>
+                <div class="message-content"></div>
+                <div class="message-submit"></div>
+            </div>
+    </div>
+
+</body>
+</html>
