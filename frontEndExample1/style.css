@@ -24,7 +24,7 @@ body {
 
 .chat {
     height: 100%; /*genel kapsayıcımın yüksekliği de 100%
-                    100% değer verecek isem önce en tepedeki 
+                    değer verecek isem önce en tepedeki 
                     html ve body'e 100% vermem ŞART.
                   */
 
@@ -37,7 +37,7 @@ body {
 .chat .sidebar {
     width: 300px;
     min-width: 300px; /*flex esneklik demek olduğu için alan daralırsa yukarıdaki width 300un bir
-                        önemi kaldımıyor bunu yavaş yavaş düşürmeye başlıyor. 
+                        önemi kalmıyor bunu yavaş yavaş düşürmeye başlıyor. 
                         min-width'i 300px dersem sidebar'ı sabitliyor. Sadece content alanını 
                         küçültmeye başlıyor.*/
 
@@ -132,7 +132,6 @@ body {
 .chat .sidebar .contacts ul li a .notification:empty {
     display:none;
 }
-
 
 
 .chat .content {
