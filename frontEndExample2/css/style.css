@@ -226,6 +226,45 @@ body {
 	font-size: 20px;
 	color: #0E1B42;
 	font-weight: 500;
+
+}
+
+.content .content-title a {
+	font-size: 14px;
+	color: #8186AD;
+
+}
+
+.content .content-title a i {
+	font-size: 11px;
+	margin-left: 8px;
+}
+
+
+.content .content-title {
+	padding-bottom: 6px;
+	border-bottom: 1px solid #F6F7FA;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+	margin-bottom: 35px;
+}
+
+.content .content-title::before {
+	content: '';
+	width: 38px;
+	height: 4px;
+	background: #C4E2E6;
+	border-radius: 4px;
+	position: absolute;
+	bottom: -2px;
+	left: 0;
+}
+
+.content .inner .inner-box .box.empty a {
+	border: 2px dashed #E4E8F6;
+	display: block;
 }
 
 
