@@ -1,0 +1,200 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, input, select, textarea, button,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a {
+    text-decoration: none;
+}
+img {
+    border: 0;
+}
+:focus {
+    outline: 0;
+}
+.clear {
+    clear: both;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+
+.popup-container {
+    display: inline-flex;
+    justify-content: center;
+    >input {
+      position: absolute;
+      left:-9999px;
+      opacity:0;
+      &:checked + .popup {
+        opacity:1;
+        visibility: visible;
+        .inner {
+          left: 50%;        
+        }
+      }
+    }
+    .button {
+      height: 40px;
+      line-height: 40px;
+      background: blue;
+      padding: 0 15px;
+      border-radius: 5px;
+      font-size: 14px;
+      color: #fff;
+      cursor: pointer;
+    }
+    .popup {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(#000, .5);
+      z-index: 10;
+      opacity: 0;
+      visibility: hidden;
+      transition: 500ms all;
+      >label {
+        position:absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height:100%;
+        cursor:pointer;
+      }
+      .inner {
+        position: absolute;
+        top: 50%;
+        left: -100%;
+        transform: translate(-50%, -50%); /*ortalama işlemi için kullandık.*/
+        background: #fff;
+        min-width:300px;
+        box-sizing: border-box;
+        transition: 500ms all;
+        z-index:10;
+        max-height: 100%;
+        overflow: auto;
+        .title {
+          height:40px;
+          display:flex;
+          justify-content:space-between;
+          align-items:center; /*40px içerisinde ortalayacak.*/
+          padding:0 15px;
+          position: sticky;
+          top: 0;
+          background:#fff;
+          h6 {
+            font-size: 15px;
+            font-weight:500;
+          }
+          label {
+            font-size: 14px;
+            color: #999;
+            cursor:pointer;
+            &:hover{
+              color:#333;
+            }
+          }
+        }
+        .content {
+          padding: 5px 15px 15px;
+          ul {
+            li{
+              margin-bottom: 15px;
+              &:last-child {
+                margin-bottom: 0;
+              }
+              input {
+                width: 100%;
+                box-sizing:border-box;
+                border: none;
+                border-bottom: 1px solid #ddd;
+                padding-bottom:10px;
+                font-size:13px;
+                &:focus {
+                  outline:0;
+                  border-color:blue;
+                }
+              }
+              button {
+                width: 100%;
+                height:30px;
+                border-radius: 5px;
+                border:none;
+                background: blue;
+                color:#fff;
+                font-size:14px;
+                cursor:pointer;
+              }
+            }
+          }
+          p{
+            font-size:13px;
+            line-height:130%;
+            margin-bottom:15px;
+            &:last-child {
+             margin-bottom:0;  
+            }
+          
+          }
+            .close-btn {
+              margin-top:15px;
+              padding-top:15px;
+              border-top:1px solid #ddd;
+              label{
+                background: rgba(#000, .05);
+                display:block;
+                line-height:30px;
+                text-align:center;
+                font-size:14px;
+                color:#999;
+                border-radius:5px;
+                cursor:pointer;
+                &:hover{
+                  background:rgba(#000, .1);
+                }
+              }
+            }
+        }
+      }
+    }
+  }
