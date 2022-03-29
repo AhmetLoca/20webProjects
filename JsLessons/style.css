@@ -15,3 +15,27 @@ textarea {
     min-height: 100px;
 
 }
+
+.box {
+    width: 150px;
+    height:150px;
+    border:1px solid #000;
+    transition: all .5s;
+}
+
+.box.bigger {
+    width:300px;
+    height:300px;
+}
+
+.box.circle {
+    border-radius:50%;
+}
+
+.box.move {
+    transform: translateX(300px)
+}
+
+.box.colored {
+    background:rebeccapurple;
+}
