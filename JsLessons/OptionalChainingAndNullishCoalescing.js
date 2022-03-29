@@ -7,8 +7,8 @@ Chaining işlemini optional hale getiriyor.
 property ya da çalıştırdığımız bir
 fonksiyon yoksa script'imiz hata veriyor.
 
--> Bunu genelde müdahale edemediğimiz
-   kodlarda kullanırız.
+-> Bunu genelde müdahale edemediğimiz kodlarda kullanırız.
+
 ->  Script'in çalışmaya devam etmesi için kullanılır.
 */
 
@@ -36,10 +36,9 @@ sayHello('Mehmet', () => console.log('callback run !'))
 
 /*
      Nullish coalescing(??):
-     (??) is logical operator that returns
-     its right-hand side operand when its
+     (??) is logical operator that returns its right-hand side operand when its
      left-hand side operand is null or undefined.
-     and otherwise returns its left-hand side operand.
+     And otherwise returns its left-hand side operand.
 
 const foo = null ?? 'default string';
 console.log(foo);
@@ -51,9 +50,8 @@ console.log(baz);
 
 
 Bunu optional changing ile çok sık kullanıyoruz.
-Çünkü kod hata vermemek için
-undefined dönüyor. Nullish coalescing'de sol
-taraf null ise sağ taraftaki işlemi çalıştırıyor.
+Çünkü kod hata vermemek için undefined dönüyor. 
+Nullish coalescing'de sol taraf null ise sağ taraftaki işlemi çalıştırıyor.
 */
 
 
@@ -71,6 +69,4 @@ console.log('Kopek adi', user2?.dog?.name ?? 'Bilinmiyor')
 
 /*
 Eğer data'nız dengesizse bunları kullan.
-
-
 */
