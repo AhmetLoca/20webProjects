@@ -1,5 +1,5 @@
 /*
-        Optional Chaining(?.):
+Optional Chaining(?.):
 
 Chaining işlemini optional hale getiriyor.
 
@@ -32,8 +32,6 @@ function sayHello(msg, callback) {
 sayHello('Ahmet Loca')
 sayHello('Mehmet', () => console.log('callback run !'))
 
-
-
 /*
      Nullish coalescing(??):
      (??) is logical operator that returns its right-hand side operand when its
@@ -47,7 +45,6 @@ console.log(foo);
 const baz = 0 ?? 42;
 console.log(baz);
 //expected output: 0
-
 
 Bunu optional changing ile çok sık kullanıyoruz.
 Çünkü kod hata vermemek için undefined dönüyor. 

@@ -11,7 +11,6 @@ Fakat bazı durumlarda senkron çalışan kod yazmamız gerekiyor.
 
 Bir fonksiyonun başına async yazarsanız otomatik olarak
 o fonksiyonu promise dönüştürmüş oluyorsunuz.
-
 */
 
 

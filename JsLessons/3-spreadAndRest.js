@@ -18,7 +18,6 @@ The arguments object is not a real array, while rest parameters are Array.
 restParam array olduğu için sort,map,forEach or pop kullanabiliriz.
 
 
-
 Birden fazla spread kullanabiliriz. Birden fazla rest KULLANAMAYIZ.
 */
 
@@ -57,7 +56,6 @@ console.log(newUser)
 // *****************************
 
 // Bu ornegi cok sık kullanıyoruz.
-
 
 function request(opts = {}) {
     const options = {
