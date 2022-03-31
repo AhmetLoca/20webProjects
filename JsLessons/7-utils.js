@@ -3,11 +3,9 @@ export function hello() {
 }
 
 //export default hello
-
 export let sayHi = name => `hello ${name}`
 
 let API_URL = 'https: //api.prototurk.com'
-
 
 /*Çoklu export*/
 export {

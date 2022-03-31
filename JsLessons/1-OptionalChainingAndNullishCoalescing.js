@@ -1,15 +1,16 @@
 /*
-Optional Chaining(?.):
+
+OPTIONAL CHAINING(?.):
 
 Chaining işlemini optional hale getiriyor.
+Chaining yaptığımız işlemde herhangi bir
+property ya da çalıştırdığımız bir fonksiyon yoksa script'imiz hata veriyor.
 
- Chaining yaptığımız işlemde herhangi bir
-property ya da çalıştırdığımız bir
-fonksiyon yoksa script'imiz hata veriyor.
+-> Bunu genelde müdahale edemediğimiz 
+kodlarda kullanırız.
 
--> Bunu genelde müdahale edemediğimiz kodlarda kullanırız.
+-> Script'in çalışmaya devam etmesi için kullanılır.
 
-->  Script'in çalışmaya devam etmesi için kullanılır.
 */
 
 const user = {
@@ -20,6 +21,7 @@ const user = {
     }
 
 console.log(user?.dog?.name);
+
 /*optional chaining yaptık.*/
 console.log("Is the code running?")
  
@@ -33,10 +35,13 @@ sayHello('Ahmet Loca')
 sayHello('Mehmet', () => console.log('callback run !'))
 
 /*
-     Nullish coalescing(??):
-     (??) is logical operator that returns its right-hand side operand when its
-     left-hand side operand is null or undefined.
-     And otherwise returns its left-hand side operand.
+NULLISH COALESCING(??):
+
+(??) is logical operator 
+that returns its right-hand side operand when its
+left-hand side operand is null or undefined.
+And otherwise returns its left-hand side operand.
+
 
 const foo = null ?? 'default string';
 console.log(foo);
@@ -46,9 +51,12 @@ const baz = 0 ?? 42;
 console.log(baz);
 //expected output: 0
 
+Left-hand side operand is null or undefined.
+
 Bunu optional changing ile çok sık kullanıyoruz.
 Çünkü kod hata vermemek için undefined dönüyor. 
-Nullish coalescing'de sol taraf null ise sağ taraftaki işlemi çalıştırıyor.
+Nullish coalescing'de sol taraf null ya da undefined ise 
+sağ taraftaki işlemi çalıştırıyor.
 */
 
 
@@ -61,7 +69,6 @@ const user2 = {
           name: 'monti'
         }
 }
-
 console.log('Kopek adi', user2?.dog?.name ?? 'Bilinmiyor')
 
 /*

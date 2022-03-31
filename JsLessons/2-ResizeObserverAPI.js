@@ -1,11 +1,12 @@
 /*
 Resize Observer API:
 
-Bir şey yeniden boyutlandığında bunu yakalabileceğiniz
+Bir şey yeniden boyutlandığında 
+bunu yakalabileceğiniz
 ve ona göre işlem yapabileceğiniz bir API.
 
-Bir etiketin resize olup olmadıgını takip etmek için 
-Resize Observer kullanılıyor.
+Bir etiketin resize olup olmadığını 
+takip etmek için Resize Observer kullanılıyor.
 
 */
 
