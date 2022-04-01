@@ -1,10 +1,10 @@
 /*
-
 OPTIONAL CHAINING(?.):
 
 Chaining işlemini optional hale getiriyor.
 Chaining yaptığımız işlemde herhangi bir
-property ya da çalıştırdığımız bir fonksiyon yoksa script'imiz hata veriyor.
+property ya da çalıştırdığımız bir fonksiyon yoksa 
+script'imiz hata veriyor.
 
 -> Bunu genelde müdahale edemediğimiz 
 kodlarda kullanırız.
@@ -12,7 +12,6 @@ kodlarda kullanırız.
 -> Script'in çalışmaya devam etmesi için kullanılır.
 
 */
-
 const user = {
         name: 'ahmet',
         cat:{
@@ -25,7 +24,6 @@ console.log(user?.dog?.name);
 /*optional chaining yaptık.*/
 console.log("Is the code running?")
  
-
 function sayHello(msg, callback) {
         console.log('Message', msg)
         callback?.()
@@ -45,6 +43,7 @@ And otherwise returns its left-hand side operand.
 
 const foo = null ?? 'default string';
 console.log(foo);
+
 //expected output: 'default string'
 
 const baz = 0 ?? 42;

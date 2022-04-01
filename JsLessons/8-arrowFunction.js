@@ -41,9 +41,6 @@ console.log(materials.map(function (material){
 }))
 */
 
-
-
-
 /*Ornek-2*/
 function topla(a1, b1) {
     return a1 + b1
@@ -53,8 +50,6 @@ const toplaArrow = (a1,b1) => a1 + b1
 
 console.log(topla(1,4))
 console.log(toplaArrow(1,4))
-
-
 
 /*Ornek-3*/
 const toplaArrow2 = (a1,b1) => {

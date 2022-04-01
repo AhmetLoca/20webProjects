@@ -83,8 +83,6 @@ this is an Immediately Invoked Function Expression
 */
 
 
-
-
 /*
 const names = ['Ahmet','Mehmet','Tayfun]
 
