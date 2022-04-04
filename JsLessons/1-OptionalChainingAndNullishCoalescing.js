@@ -10,7 +10,6 @@ script'imiz hata veriyor.
 kodlarda kullanırız.
 
 -> Script'in çalışmaya devam etmesi için kullanılır.
-
 */
 const user = {
         name: 'ahmet',
@@ -54,8 +53,8 @@ Left-hand side operand is null or undefined.
 
 Bunu optional changing ile çok sık kullanıyoruz.
 Çünkü kod hata vermemek için undefined dönüyor. 
-Nullish coalescing'de sol taraf null ya da undefined ise 
-sağ taraftaki işlemi çalıştırıyor.
+Nullish coalescing'de sol taraf null ya da undefined 
+ise sağ taraftaki işlemi çalıştırıyor.
 */
 
 

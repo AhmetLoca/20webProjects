@@ -13,7 +13,6 @@ ihtiyacımız yok.
 
 const sayHello2 = name => `hello2 ${name}`
 console.log(sayHello2('Astronomi'))
-
 */
 
 const sayHello3 = (name, surname) => `hello ! ${name} ${surname}` 
@@ -74,8 +73,6 @@ console.log(toplaArrow2(1,4))
 
 */
 
-
-
 /*
 Does not have its own bindings this or super, and should not be 
 used as methods.
@@ -92,9 +89,7 @@ document.querySelector('h3').addEventListener('click', () => {
 })
 
 this, bir window objesi ve kendisine ait bir this'i yok.
-
 */
-
 
 
 

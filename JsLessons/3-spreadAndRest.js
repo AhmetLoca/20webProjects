@@ -31,7 +31,7 @@ Birden fazla rest KULLANAMAYIZ.
 //     console.log(otherNames)
 // }
 
-//getName(user[0],user[1],user[2])  = getName(...user)
+//getName(user[0],user[1],user[2])  === getName(...user)
 //getName(...user)
 
 const user = {
@@ -45,7 +45,6 @@ const newUser = {
 }
 
 //newUser.surname = 'Çelik'
-
 console.log(user)
 console.log(newUser)
 
@@ -72,7 +71,6 @@ request({
 request()
 
 // ***********************
-
 const numbers = [1, 2, 3, 4]
 console.log([0, ...numbers, 5])  //Burada array'i kopyaladık.
 

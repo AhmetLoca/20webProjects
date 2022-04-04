@@ -1,6 +1,6 @@
 /*
 
-Dizideki bütü elemanları bir işlemden geçirmemizi
+Dizideki bütün elemanları bir işlemden geçirmemizi
 sağlıyor. 
 Geriye dizi ögesini değiştirerek dönderebiliyoruz.
 Ya da yeni eklemeler yapabiliyoruz.
@@ -78,5 +78,3 @@ console.log(todos.map(todo => {
     }
     return todo;
 }))
-
-

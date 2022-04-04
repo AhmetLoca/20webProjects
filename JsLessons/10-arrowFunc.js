@@ -7,7 +7,6 @@ var obj = {
         }, 300);
     }
 }
-
 obj.doSomethingLater();
 
 /*
