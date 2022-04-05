@@ -1,0 +1,56 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: sans-serif;
+
+}
+
+.container .game {
+    width: 500px;
+    height: 500px;
+    margin: 50px;
+    background-color: #111;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /*
+    fr: ne kadar boş alan varsa otomatik 
+    olarak dolduruyor
+    */
+    grid-template-rows: repeat(3, 1fr) ;
+    gap: 10px;
+}
+
+.container .game .tile {
+    background-color:#fff;
+    cursor:pointer;
+    font-size: 130px;
+    /*X ve O yu ortaladık.*/
+    display:flex;
+    align-items: center;
+    justify-content: center;  
+}
+
+.container .game .tile:hover {
+    background-color: #eee;
+}
+
+.container .status {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+
+}
+
+.container .status .score {
+    padding-left:20px;
+    padding-right:20px;
+    font-size:20px;
+    
+}
+
+.container .status .user {
+    font-size: 40px;
+}
