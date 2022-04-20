@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alışveriş Sepeti</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="basket.css">
+ 
+</head>
+<body>
+    <!-- 
+        Container'da sayfa içeriğinin yer
+        alacağı asıl kutuyu belirtiyorum. 
+        Web sayfalarında her zaman tüm genişliği kullanmıyoruz. 
+    -->
+    <div class="container mt-5">
+        <!--
+            Sutünlara böleceğiniz kısmı row div'ine alıyoruz.
+            Sütunlar her zaman row'un içinde yer alır.
+        !-->
+        <div class="row">
+            <div id="products" class="col-sm-7">
+                <h1>Ürünler</h1>
+            <template id="product-template">
+              <div class="product">
+                <img src="">
+                <div class="product-name"></div>
+                <div class="product-price mb-2"></div>
+                <div class="quantity-bar d-flex justify-content-between align-items-center">
+                    <button class="decrease-button btn btn-sm btn-danger">-</button>
+                    <span class="quantity"></span>
+                    <button class="increase-button btn btn-sm btn-success">+</button>
+                </div>
+              </div>
+            </template>
+        </div>
+        <div id="basket" class="col-sm-5">
+            <h1>Sepet</h1>
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Ürün</th>
+                        <th>Miktar</th>
+                        <th class="text-end">Fiyat</th>
+                    </tr>
+                </thead>
+                <tbody >
+                    <template id="basket-item-template">
+                        <tr>
+                            <td class="item-name"></td>
+                            <td class="item-quantity"></td>
+                            <td class="item-cost text-end"></td>
+                        </tr>
+                    </template>
+                        <tr class="total">
+                            <td>Toplam</td>
+                            <td></td>
+                            <td class="text-end">-</td>
+                        </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<!-- div elemanları block elemanlardır. -->
+<!-- Bootstrap 12 sütundan oluşan bir grid sistemi sunuyor. -->
+
+<script src="basket.js"></script>
+</body>
+</html>

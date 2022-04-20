@@ -1,0 +1,34 @@
+.product {
+    display: inline-block;
+    width: 180px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 0 5px 10px 0;
+    padding: 5px;
+    transition: 0.5s ease all;
+}
+
+.product:hover {
+    background-color: #fff4df;
+    border-color: #ffc34f;
+    box-shadow: 0 0 5px #ffc34f;
+    transform: translateY(5px);
+}
+
+.product img {
+    width : 100%;
+}
+
+.product button {
+    width: 31px;
+}
+
+.product-price {
+    color: #5eb11b;
+    font-weight: 600;
+}
+
+.total {
+    font-weight: 600;
+}
+ 

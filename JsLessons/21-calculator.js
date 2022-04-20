@@ -53,7 +53,7 @@ else if(operation == "faktöriyel"){
     //acc -> 24, i = 1
     //acc -> 24
 
-    let acc = 1;
+    let acc = 4;
     for(let i = number1; i>1; i--){
         acc = acc * i;
     }
@@ -150,6 +150,8 @@ while(c < 10){
     }
     console.log(c);
 }
+
+
 /*
 Yani break döngüyü tamamen sonlandırıyor.
 Continue'dan sonraki kodların çalıştırılmasını engelliyor.
