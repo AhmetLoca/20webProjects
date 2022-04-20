@@ -78,9 +78,18 @@ function listenToButtonClicks(){
 
     function updateBasketItem(type, productElement){
         let itemElement;
+        let item = basket.find(item => item.product.id == productElement.dataset.productId);
+
+
+         //Ekli olan satırı güncelle
+         if(item){
+         let itemElements = [...document.querySelectorAll('#basket table tbody tr')];
+                
+         itemElement = itemElements.find(i => i.dataset.productId == item.product.id);
+         }
+
         //Eğer işlem arttirma ise:
         if(type == "increase"){
-            let item = basket.find(item => item.product.id == productElement.dataset.productId);
             //Eğer ilk kez ekleniyorsa:
             if(!item){
                 //İtem objesini oluştur
@@ -114,46 +123,74 @@ function listenToButtonClicks(){
                 item.cost = item.quantity * item.product.price;
 
 
-                //Ekli olan satırı güncelle
-                let itemElements = [...document.querySelectorAll('#basket table tbody tr')];
-                
-                itemElement = itemElements.find(i => i.dataset.productId == item.product.id);
-           
+               
             }
-
-            let nameElement = itemElement.querySelector('.item-name');
-            nameElement.innerText = item.name;  
-
-            let quantityElement = itemElement.querySelector('.item-quantity');
-            quantityElement.innerText = item.quantity + ' ' + item.product.unit; 
-
-            let costElement = itemElement.querySelector('.item-cost');
-            costElement.innerText = item.cost.toFixed(2) + ' TL'; 
-
-
-            //Ürün kartındaki sayıyı güncelle
-
-            let productQuantityElement = productElement.querySelector('.quantity');
-            productQuantityElement.innerText = item.quantity;
-
+           
+           
         }
         
         //Eğer işlem azaltma ise:
         else{
              //Eğer sepette eklenmemişte, bir şey yapma
+            if(!item){
+                return;
+            }
 
-             
             //Sepetteki sayıyı azalt
+            item.quantity--;
 
             //Eğer sayı 0 olursa, sepetten ürünü sil
+            if(item.quantity == 0){
+                let index = basket.indexOf(item);
+                basket.splice(index, 1);
 
+                itemElement.remove();
+            }
             //Eğer sayı 0 değilse, sepetteki ürünü güncelle
-
+            else{
+                item.cost = item.quantity * item.product.price;
+            }
 
         }
+         //Satır değerlerini güncelle
+         let nameElement = itemElement.querySelector('.item-name');
+         nameElement.innerText = item.name;  
+
+         let quantityElement = itemElement.querySelector('.item-quantity');
+         quantityElement.innerText = item.quantity + ' ' + item.product.unit; 
+
+         let costElement = itemElement.querySelector('.item-cost');
+         costElement.innerText = item.cost.toFixed(2) + ' TL'; 
+
+
            
+        
+         //Ürün kartındaki sayıyı güncelle
+        let productQuantityElement = productElement.querySelector('.quantity');
+        productQuantityElement.innerText = item.quantity || '-';
+
+
         //Toplam tutarı güncelle
+        updateTotalPrice();
+
+
     }
+
+    function updateTotalPrice(){
+        //Sepetteki tüm ürünlerin tutarlarını topla
+        let total = 0;
+        for(let item of basket){
+            total +=item.cost;
+        }
+
+
+        //Arayüzü güncelle
+        document.querySelector('#total-value').innerText = total.toFixed(2) + ' TL';
+        
+
+    }
+
+
 
 
 function createProducts(){
