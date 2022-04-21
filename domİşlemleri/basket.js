@@ -1,12 +1,13 @@
-/* Elimde bir ürün listesi olacak. Herbir ürün için bir kart yerleştireceğim. */ 
+/* Elimde bir ürün listesi olacak. Herbir ürün için bir kart yerleştireceğim(template). */ 
+// Bu diziyi arayüzde nasıl göstereceğiz? template yardımıyla.
 const products = [
     {  
-       id : 1,
+       id : 1, /* Veritabanı gibi bir yerden veri geliyorsa üzerinde id olacaktır. */
        name : 'Domates',
        photoPath : 'domates.jpg',
        price : 3.99,
-       unit : 'Kg',
-       quantity: 0
+       unit : 'Kg', /* Ürünün birimi var. */
+       quantity: 0 /* Kaç tane seçildiğinin bilgisi var.*/
     },
     {  
         id : 2,

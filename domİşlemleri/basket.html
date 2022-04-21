@@ -11,56 +11,71 @@
  
 </head>
 <body>
+    <!-- DOM işlemleri, JavaScript ile html kodlarının birleştirilmesini sağlıyor.
+        JavaScript ve DOM'u birleştirerek JavaScript koduyla kullanıcıya içerikler gösterebileceğiz. 
+        Arayüzü güncelleyebileceğiz. 
+        Ayrıca kullanıcıda arayüzden tıklama, 
+        metin girme gibi işlemleri yaptığı zaman onları okuyup o değerler üzerinden işlemler yapıyor olacağız.
+    -->
+
     <!-- 
-        Container'da sayfa içeriğinin yer
-        alacağı asıl kutuyu belirtiyorum. 
+        Container'da sayfa içeriğinin yer alacağı asıl kutuyu belirtiyorum. 
         Web sayfalarında her zaman tüm genişliği kullanmıyoruz. 
     -->
-    <div class="container mt-5">
-        <!--
-            Sutünlara böleceğiniz kısmı row div'ine alıyoruz.
-            Sütunlar her zaman row'un içinde yer alır.
-        !-->
-        <div class="row">
+    <div class="container mt-5"> <!--bootstrap ile beraber margin-top değeri verdik.!-->
+        <div class="row"> <!--Sutünlara böleceğiniz kısmı row div'ine alıyoruz. !-->
             <div id="products" class="col-sm-7">
                 <h1>Ürünler</h1>
-            <template id="product-template">
-              <div class="product">
+               
+            <template id="product-template"> <!--Elemanların dinamik olarak eklenmesini istiyorsam elimde bir tane şablonum(template) olacak. Herbir ürün için bu kartı yerleştireceğim.!-->
+            <!-- bu template olduğu için içindeki değerler boş. -->
+                <div class="product">
                 <img src="">
                 <div class="product-name"></div>
-                <div class="product-price mb-2"></div>
-                <div class="quantity-bar d-flex justify-content-between align-items-center">
-                    <button class="decrease-button btn btn-sm btn-danger">-</button>
+                <div class="product-price mb-2"></div> <!--mb: margin-bottom !-->
+                
+                <div class="quantity-bar d-flex justify-content-between align-items-center"><!--d-flex:display:flex !-->
+                    <button class="decrease-button btn btn-sm btn-danger">-</button><!--sm:small !-->
                     <span class="quantity"></span>
                     <button class="increase-button btn btn-sm btn-success">+</button>
                 </div>
+
               </div>
             </template>
+
+
         </div>
+
         <div id="basket" class="col-sm-5">
             <h1>Sepet</h1>
-            <table class="table table-hover">
+
+            <table class="table table-hover"> <!--bootstrap class'ını ekledik.!-->
                 <thead>
                     <tr>
                         <th>Ürün</th>
                         <th>Miktar</th>
-                        <th class="text-end">Fiyat</th>
+                        <th class="text-end">Fiyat</th> <!--text-end ile sona kaydırdık.!-->
                     </tr>
                 </thead>
-                <tbody >
-                    <template id="basket-item-template">
+
+                <tbody>
+                    <template id="basket-item-template"> 
+                        <!-- template vermemizin nedeni: sayfa ilk açıldığında sepet boşsa boş olarak göstermesi için. -->
+                      <!-- bu template olduğu için içindeki değerler boş. -->
                         <tr>
                             <td class="item-name"></td>
                             <td class="item-quantity"></td>
-                            <td class="item-cost text-end"></td>
+                            <td class="item-cost text-end"></td> <!--text-end ile sona kaydırdık.!-->
                         </tr>
                     </template>
-                        <tr class="total">
+
+                        <tr class="total"> <!--css'le son satırdaki yazıyı daha da koyultmak için class verdik.!-->
                             <td>Toplam</td>
                             <td></td>
-                            <td id="total-value" class="text-end">-</td>
+                            <td id="total-value" class="text-end">-</td> <!--text-end ile sona kaydırdık.!-->
                         </tr>
                 </tbody>
+
             </table>
         </div>
     </div>
@@ -68,7 +83,6 @@
 
 <!-- div elemanları block elemanlardır. -->
 <!-- Bootstrap 12 sütundan oluşan bir grid sistemi sunuyor. -->
-
 <script src="basket.js"></script>
 </body>
 </html>

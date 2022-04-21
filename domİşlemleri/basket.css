@@ -12,11 +12,15 @@
     background-color: #fff4df;
     border-color: #ffc34f;
     box-shadow: 0 0 5px #ffc34f;
-    transform: translateY(5px);
+    transform: translateY(5px); /*5px aşağı kay.*/
 }
 
 .product img {
     width : 100%;
+}
+
+.product-name {
+    height: 48px;
 }
 
 .product button {
@@ -31,4 +35,7 @@
 .total {
     font-weight: 600;
 }
- 
+
+img {
+    height: 210px;
+}
