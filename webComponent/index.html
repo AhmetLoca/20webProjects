@@ -1,0 +1,48 @@
+<!--
+Web Components Nedir?
+
+    - Bir Web API'dir.
+    - Kendinize ait özel ve tekrar kullanılabilen elementler üretebiliriz.
+    - Web component'ler herhangi bir 3.parti yazılıma ya da Framework'e ihtiyaç duymazlar.
+    
+Üç Ana Bloktan Oluşur
+
+    * Custom Elements : Özel HTML etiketleri üretmemizi sağlar. 
+                        Özel CSS class'larını yazmamızı sağlar.
+                        Lifecycle metodları kullanılabilir.
+                    
+            class UserCard extends HTMLElement {}
+            window.customElements.define("user-card", UserCard);
+
+            ->JavaScript OOP'yi kullanarak biz UserCard isimli elementi bu HTML'de üret.
+            Yani HTMLElement'i kullanarak bir tane user-card ürettik.
+            
+            <user-card></user-card> ->h1 veya textArea'dan herhangi bir farkı yok.
+
+            Yaşam Döngüsü Metodları:
+            
+            -constructor()
+                Element herhangi bir şekilde html üzerinde create olursa ya da değiştirilirse
+                direkt constructor metodu otomatik olarak çağrılır.
+            
+            -connectedCallback()
+                Element dom üzerine yerleştirildiği an da connectedCallback() metodu otomatik olarak
+                çağrılır.
+
+            -disconnectedCallback()
+                Dom üzerinden o element silinirse bu arkadaş çağrılıyor.
+            
+            -attributeChangedCallback(attributeName, oldValue, newValue)
+
+    * Shadow DOM : Component'in kendine ait dünyasını tanımlar.
+                   Stil işlemlerinin kendi içerisinde kalmasını sağlar ( scoped )
+                   Shadow DOM üretmek için element.attachShadow({mode:open}) kullanılır.
+                   Component ve stil ile iletişim shadowRoot üzeriden sağlar.
+
+    * HTML Templates : Encapsulate şekilde web componenti tanımlar.
+                       HTML ve CSS kodlarını içerir.
+                       Slot kullanımına izin verir. 
+    
+    
+    
+    !-->
